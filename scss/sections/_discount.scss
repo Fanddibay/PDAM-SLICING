@@ -1,0 +1,36 @@
+@use "../custom" as *;
+
+.background-green {
+  background-color: #29795a;
+  background-position: center;
+  width: 100%;
+  height: 560px;
+  position: absolute;
+  margin-top: 300px;
+
+  .discount {
+    background-image: url(/img/assetsImg/discountImg.png);
+    margin-top: -200px !important;
+    width: 100%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border-radius: $border-radius-xl;
+
+    .text {
+      align-items: center !important;
+      align-self: center !important;
+      justify-self: center !important;
+      justify-items: center !important;
+      flex: none;
+      padding: 100px;
+      h3 {
+        font-size: 42px;
+        color: $white;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

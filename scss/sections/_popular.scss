@@ -1,0 +1,40 @@
+@use "../custom" as *;
+
+main {
+  margin-top: 64px;
+
+  .container {
+    margin-top: 60px;
+  }
+
+  .card-custom {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 22px 22px;
+    height: 280px;
+    border-radius: $border-radius-xl;
+    inset: 1px;
+
+    figure {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    img {
+      width: 160px !important;
+      height: 220px !important;
+      filter: grayscale(100%);
+      aspect-ratio: 3/4;
+      &:hover {
+        filter: grayscale(0);
+        transition: transform 0.5s;
+        transform: translate(0, -12px);
+        opacity: 100;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

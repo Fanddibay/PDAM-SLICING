@@ -1,0 +1,20 @@
+@use "../custom" as *;
+
+.services {
+  margin-top: 140px;
+
+  h3 {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 64px 0;
+  }
+
+  a {
+    color: $white;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}

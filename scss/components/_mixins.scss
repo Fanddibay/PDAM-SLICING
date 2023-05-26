@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+@mixin jumbotron {
+  background-image: url(/img/jumbotron.png) !important;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin customBorder {
+  border-bottom: 8px solid #f6b50e;
+}

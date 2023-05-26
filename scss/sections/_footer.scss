@@ -1,0 +1,27 @@
+@use "../custom" as *;
+
+footer {
+  color: $white;
+
+  ul {
+    li:nth-child(1) {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    li {
+      text-align: start;
+      margin-top: 12px;
+      a {
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

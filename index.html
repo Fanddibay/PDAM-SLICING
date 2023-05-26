@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn bootstrap with sass</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="jumbotron">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light menu">
+        <div class="container">
+          <a class="" href="#"
+            ><img src="img/logo.png" width="64px" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-ul">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Furniture</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Interior Design
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-text"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Property</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 class="">
+        Discover The Best <br />
+        <span class="custom-border">Furniture</span> For You
+      </h1>
+    </header>
+    <main>
+      <section class="popular">
+        <div
+          class="d-flex justify-content-between align-items-center container"
+        >
+          <h3><span class="custom-border">Shop popular</span> Categories</h3>
+          <a href="#" class="text-decoration-none text-black-50">see all</a>
+        </div>
+        <div class="container">
+          <div class="row gap-3 gx-4">
+            <div class="col d-block card-custom">
+              <figure>Chair</figure>
+              <p class="hide">125 Items</p>
+              <img src="img/assetsImg/Bentail.png" alt="" />
+            </div>
+            <div class="col d-block card-custom">
+              <figure>Chair</figure>
+              <p class="hide">125 Items</p>
+              <img src="img/assetsImg/Chair.png" alt="" />
+            </div>
+            <div class="col d-block card-custom">
+              <figure>Chair</figure>
+              <p class="hide">125 Items</p>
+              <img src="img/assetsImg/Desk.png" alt="" />
+            </div>
+            <div class="col d-block card-custom">
+              <figure>Chair</figure>
+              <p class="hide">125 Items</p>
+              <img src="img/assetsImg/Lamp.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="row gap-4">
+            <div class="col">
+              <img src="/img/assetsImg/bedImg.png" alt="" />
+            </div>
+            <div class="col align-self-center">
+              <h2>
+                Simple bed for your <br />
+                weekend
+              </h2>
+              <p>
+                Enjoy your weekends with your families <br />
+                using our lastest Simple Bed set!
+              </p>
+              <a href="#" class="btn btn-warning">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="background-green">
+        <section class="container">
+          <div class="discount">
+            <div class="text">
+              <h3>
+                Get Discount up to <br />
+                50% off Today!
+              </h3>
+              <a href="#" class="btn btn-warning text-white">Explore Now</a>
+            </div>
+          </div>
+        </section>
+        <footer class="container">
+          <div class="row">
+            <div class="col">
+              <h5></h5>
+              <ul>
+                <li class="nav-link">Company</li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Blog</a></li>
+                <li class="nav-link"><a href="#">Careers</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="nav-link">Company</li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Blog</a></li>
+                <li class="nav-link"><a href="#">Careers</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="">
+                <li class="nav-link">Company</li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Blog</a></li>
+                <li class="nav-link"><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="nav-link">Company</li>
+                <li class="nav-link"><img src="/img/Appstore.png" alt="" /></li>
+                <li class="nav-link"><img src="/img/Gplay.png" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
