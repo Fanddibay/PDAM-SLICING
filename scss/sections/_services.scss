@@ -3,18 +3,38 @@
 .services {
   margin-top: 140px;
 
-  h3 {
+  @include media-breakpoint-down(sm) {
+    margin-top: 60px;
+  }
+
+  h2 {
     font-size: 38px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 24px !important;
+      margin: 24px 0;
+    }
   }
 
   p {
     font-size: 20px;
     margin: 64px 0;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px !important;
+      margin: 24px 0;
+    }
   }
 
   a {
     color: $white;
     padding: 10px 20px;
     font-size: 18px;
+
+    @include media-breakpoint-down(sm) {
+      color: $white;
+      padding: 6px 12px;
+      font-size: 12px;
+    }
   }
 }

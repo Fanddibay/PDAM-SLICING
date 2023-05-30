@@ -7,6 +7,10 @@
   height: 560px;
   position: absolute;
   margin-top: 300px;
+  @include media-breakpoint-down(sm) {
+    height: 1200px;
+    margin-top: 240px;
+  }
 
   .discount {
     background-image: url(/img/assetsImg/discountImg.png);
@@ -17,7 +21,16 @@
     background-position: center;
     background-size: cover;
     margin: auto;
+    background-blend-mode: luminosity !important;
     border-radius: $border-radius-xl;
+    @include media-breakpoint-down(sm) {
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: luminosity !important;
+      position: relative;
+    }
 
     .text {
       align-items: center !important;
@@ -30,6 +43,22 @@
         font-size: 42px;
         color: $white;
         margin-bottom: 12px;
+        @include media-breakpoint-down(sm) {
+          font-size: 24px;
+          color: white;
+          text-align: center;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        position: absolute;
+        top: 15%;
+      }
+      a {
+        @include media-breakpoint-down(sm) {
+          padding: 8px 12px !important;
+          font-size: 12px;
+        }
       }
     }
   }

@@ -2,7 +2,10 @@
 
 footer {
   color: $white;
-
+  margin-top: 64px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 48px !important;
+  }
   ul {
     li:nth-child(1) {
       color: white;
@@ -12,6 +15,7 @@ footer {
     li {
       text-align: start;
       margin-top: 12px;
+
       a {
         color: white;
         font-size: 14px;
@@ -20,6 +24,13 @@ footer {
 
         &:hover {
           color: $yellow;
+        }
+
+        @include media-breakpoint-down(sm) {
+          color: white;
+          font-size: 12px !important;
+          font-weight: 300 !important;
+          text-decoration: none;
         }
       }
     }

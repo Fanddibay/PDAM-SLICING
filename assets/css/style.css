@@ -10726,6 +10726,14 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 575.98px) {
+  .jumbotron {
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .menu li {
   padding: 0 0.7rem;
@@ -10749,6 +10757,12 @@ textarea.form-control-lg {
 
 footer {
   color: #fff;
+  margin-top: 64px;
+}
+@media (max-width: 575.98px) {
+  footer {
+    margin-top: 48px !important;
+  }
 }
 footer ul li:nth-child(1) {
   color: white;
@@ -10768,6 +10782,14 @@ footer ul li a {
 footer ul li a:hover {
   color: #f6b50e;
 }
+@media (max-width: 575.98px) {
+  footer ul li a {
+    color: white;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    text-decoration: none;
+  }
+}
 
 .jumbotron h1 {
   position: absolute;
@@ -10778,9 +10800,25 @@ footer ul li a:hover {
   color: #fff;
   font-size: 64px;
 }
+@media (max-width: 575.98px) {
+  .jumbotron h1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 24px;
+  }
+}
 
 .custom-border {
   border-bottom: 8px solid #f6b50e;
+}
+@media (max-width: 575.98px) {
+  .custom-border {
+    border-bottom: 4px solid #f6b50e;
+  }
 }
 
 .background-green {
@@ -10791,6 +10829,12 @@ footer ul li a:hover {
   position: absolute;
   margin-top: 300px;
 }
+@media (max-width: 575.98px) {
+  .background-green {
+    height: 1200px;
+    margin-top: 240px;
+  }
+}
 .background-green .discount {
   background-image: url(/img/assetsImg/discountImg.png);
   margin-top: -200px !important;
@@ -10800,7 +10844,18 @@ footer ul li a:hover {
   background-position: center;
   background-size: cover;
   margin: auto;
+  background-blend-mode: luminosity !important;
   border-radius: 1rem;
+}
+@media (max-width: 575.98px) {
+  .background-green .discount {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity !important;
+    position: relative;
+  }
 }
 .background-green .discount .text {
   align-items: center !important;
@@ -10815,30 +10870,104 @@ footer ul li a:hover {
   color: #fff;
   margin-bottom: 12px;
 }
+@media (max-width: 575.98px) {
+  .background-green .discount .text h3 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .background-green .discount .text {
+    position: absolute;
+    top: 15%;
+  }
+}
+@media (max-width: 575.98px) {
+  .background-green .discount .text a {
+    padding: 8px 12px !important;
+    font-size: 12px;
+  }
+}
 
 .services {
   margin-top: 140px;
 }
-.services h3 {
+@media (max-width: 575.98px) {
+  .services {
+    margin-top: 60px;
+  }
+}
+.services h2 {
   font-size: 38px;
+}
+@media (max-width: 575.98px) {
+  .services h2 {
+    font-size: 24px !important;
+    margin: 24px 0;
+  }
 }
 .services p {
   font-size: 20px;
   margin: 64px 0;
+}
+@media (max-width: 575.98px) {
+  .services p {
+    font-size: 16px !important;
+    margin: 24px 0;
+  }
 }
 .services a {
   color: #fff;
   padding: 10px 20px;
   font-size: 18px;
 }
+@media (max-width: 575.98px) {
+  .services a {
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
 
 main {
   margin-top: 64px;
 }
-main .container {
+@media (max-width: 575.98px) {
+  main {
+    margin-top: 1px !important;
+  }
+}
+main .popular .container {
   margin-top: 60px;
 }
-main .card-custom {
+@media (max-width: 575.98px) {
+  main .popular .container {
+    margin-top: 32px !important;
+    margin-bottom: 64px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  main .popular .container h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  main .popular .container h3 span {
+    border-bottom: 8px solid #f6b50e;
+  }
+}
+@media (max-width: 575.98px) and (max-width: 575.98px) {
+  main .popular .container h3 span {
+    border-bottom: 4px solid #f6b50e;
+  }
+}
+@media (max-width: 575.98px) {
+  main .popular .container a {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+main .popular .card-custom {
   background-color: #f1f1f1;
   text-align: center;
   padding: 22px 22px;
@@ -10846,25 +10975,62 @@ main .card-custom {
   border-radius: 1rem;
   inset: 1px;
 }
-main .card-custom figure {
+@media (max-width: 575.98px) {
+  main .popular .card-custom {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 12px;
+    height: 160px;
+    width: 240px;
+    margin: 32px auto;
+    border-radius: 1rem;
+    inset: 1px;
+  }
+}
+main .popular .card-custom figure {
   font-size: 24px;
   font-weight: bold;
 }
-main .card-custom img {
+@media (max-width: 575.98px) {
+  main .popular .card-custom figure {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+main .popular .card-custom img {
   width: 160px !important;
   height: 220px !important;
   filter: grayscale(100%);
   aspect-ratio: 3/4;
 }
-main .card-custom img:hover {
+main .popular .card-custom img:hover {
   filter: grayscale(0);
   transition: transform 0.5s;
   transform: translate(0, -12px);
   opacity: 100;
 }
-main .card-custom p {
+@media (max-width: 575.98px) {
+  main .popular .card-custom img {
+    width: 80px !important;
+    height: 100px !important;
+    filter: grayscale(100%);
+  }
+  main .popular .card-custom img:hover {
+    filter: grayscale(0);
+    transition: transform 0.5s;
+    transform: translate(0, -12px);
+    opacity: 100;
+  }
+}
+main .popular .card-custom p {
   font-size: 14px;
   font-weight: 500;
+}
+@media (max-width: 575.98px) {
+  main .popular .card-custom p {
+    font-size: 8px;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
