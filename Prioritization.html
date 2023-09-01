@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prioritization - subdistrict</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-secondary">
+    <div class="bg-light container-body">
+      <!-- header -->
+
+      <!-- title head -->
+      <section class="container-fluid">
+        <div class="">
+          <div class="d-md-flex d-block justify-content-between">
+            <div>
+              <!-- breadcrumb -->
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-black-50 text-decoration-none"
+                    >Kalimantan</a
+                  >
+                </li>
+                <li class="breadcrumb-item" aria-current="page">
+                  Prioritization - subdistrict
+                </li>
+              </ul>
+              <h6 class="fs-3 fw-bold -mt-5">Prioritization - subdistrict</h6>
+              <!-- end breadcrumb -->
+            </div>
+            <div
+              class="headButton align-content-center justify-content-center gap-4 gap-md-0"
+            >
+              <button
+                type="button"
+                class="btn btn-danger rounded-pill text-white fw-bold me-4"
+              >
+                + Add Prioritization
+              </button>
+              <button
+                type="button"
+                class="btn btn-success rounded-4 text-white fw-bold me-4"
+              >
+                <img src="assets/icons/Excel.svg" alt="" /> Download File
+              </button>
+              <button
+                type="button"
+                class="btn btn shadow-lg fw-bold"
+                id="showFilter"
+              >
+                <img src="assets/icons/Filters.svg" alt="" /> Hide Filters
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end title head -->
+
+      <!-- form header -->
+      <section class="container-fluid visually-hidden" id="formHeader">
+        <div class="bg-white p-3 rounded-4">
+          <div class="d-md-flex d-block gap-4">
+            <div class="col">
+              <div class="text-start select-input">
+                <label class="fs-6 fw-bold mb-2" for="SelectDate">Year</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="SelectDate"
+                >
+                  <option selected>Select Year</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-start select-input">
+                <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                  >Quarter</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="SelectDate"
+                >
+                  <option selected>Select Quarter</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-start select-input">
+                <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                  >Sub-district</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="SelectDate"
+                >
+                  <option selected>Select Sub-district</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="d-md-flex d-block gap-4">
+            <div class="col">
+              <div class="text-start select-input">
+                <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                  >HRC Index</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="SelectDate"
+                >
+                  <option selected>Select HRC Index</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-start select-input">
+                <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                  >Payload Index</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="SelectDate"
+                >
+                  <option selected>Select Payload Index</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-start select-input">
+                <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                  >Payload Share</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="SelectDate"
+                >
+                  <option selected>Select Payload Share</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col text-end">
+              <div class="flex mt-5">
+                <button type="button" class="btn text-danger fw-bold">
+                  Reset
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger px-5 rounded-pill text-white"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- endform header -->
+
+      <!-- end header -->
+
+      <!-- side navbar -->
+
+      <!-- end side navbar -->
+
+      <!-- main content -->
+      <main>
+        <!-- table -->
+        <div class="container-fluid">
+          <div class="table-responsive">
+            <table class="table table-borderless table-spacing">
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                    class="p-3 bg-danger text-white rounded-start-4"
+                  >
+                    Year
+                  </th>
+                  <th scope="col" class="p-3 bg-danger text-white">Quarter</th>
+                  <th scope="col" class="p-3 bg-danger text-white">Branch</th>
+                  <th scope="col" class="p-3 bg-danger text-white">Cluster</th>
+                  <th scope="col" class="p-3 bg-danger text-white">
+                    Sub-district
+                  </th>
+                  <th scope="col" class="p-3 bg-danger text-white">
+                    HRC Index
+                  </th>
+                  <th scope="col" class="p-3 bg-danger text-white">
+                    Payload Index
+                  </th>
+                  <th scope="col" class="p-3 bg-danger text-white">
+                    Payload Share
+                  </th>
+                  <th
+                    scope="col"
+                    class="p-3 bg-danger text-white rounded-end-4"
+                  >
+                    Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="p-3 mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-danger fw-bold">
+                    <i class="fa-solid fa-arrow-trend-down me-2"></i>Low
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-danger fw-bold">
+                    <i class="fa-solid fa-arrow-trend-down me-2"></i>Low
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-danger fw-bold">
+                    <i class="fa-solid fa-arrow-trend-down me-2"></i>Low
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
+                  <td class="mt-5">1</td>
+                  <td class="mt-5">SIDOARJO</td>
+                  <td class="mt-5">Kediri</td>
+                  <td class="mt-5">Banyakan</td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  </td>
+                  <td class="mt-5 text-success fw-bold">
+                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  </td>
+                  <td class="mt-5">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end table -->
+        <!-- pagination -->
+        <nav aria-label="Page navigation example" class="mt-5">
+          <ul class="pagination justify-content-center me-5 gap-2">
+            <li class="page-item">
+              <a class="page-link text-black rounded"><</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-danger rounded border-danger" href="#"
+                >1</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link text-black rounded" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-black rounded" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-black rounded" href="#">></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end pagination -->
+        <!-- end main content -->
+      </main>
+    </div>
+    <script src="main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

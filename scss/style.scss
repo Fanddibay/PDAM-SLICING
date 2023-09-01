@@ -2,18 +2,12 @@
 
 // IMPORT THE COMPONENTS
 
-@use "components/animations";
 @use "components/button";
+@use "components/input";
+@use "components/microTable";
 @use "components/mixins";
-@use "components/typography";
 
 // sections
-@use "sections/navbar";
-@use "sections/faq";
-@use "sections/footer";
-@use "sections/jumbotron";
-@use "sections/discount";
-@use "sections/portfolio";
-@use "sections/services";
-@use "sections/testimonials";
-@use "sections/popular";
+@use "sections/margin";
+@use "sections/sidebar";
+@use "sections/table";

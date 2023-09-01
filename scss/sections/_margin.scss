@@ -1,0 +1,20 @@
+@use "../custom" as *;
+
+.container-body {
+  padding: 32px !important;
+  border-radius: 24px;
+  margin-left: 88px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @include media-breakpoint-down(sm) {
+    padding: 32px !important;
+    margin: 0;
+    border-radius: 0;
+    padding: 16px !important;
+  }
+}
+
+.-mt-5 {
+  margin-top: -12px;
+}

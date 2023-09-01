@@ -1,0 +1,17 @@
+@use "../custom" as *;
+.select-input {
+  margin-bottom: 16px;
+  label {
+    margin-bottom: 8px;
+  }
+
+  select {
+    padding: 14px !important;
+    border-radius: 16px !important;
+    gap: 8px;
+  }
+
+  .form-select:focus {
+    border: red 2px;
+  }
+}
