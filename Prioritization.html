@@ -13,6 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
+    />
   </head>
   <body class="bg-secondary">
     <div class="bg-light container-body">
@@ -38,17 +42,17 @@
               <!-- end breadcrumb -->
             </div>
             <div
-              class="headButton align-content-center justify-content-center gap-4 gap-md-0"
+              class="headButtonPrioritizen align-self-center justify-content-center d-inline-grid gap-sm-4 gap-md-0 d-md-flex"
             >
               <button
                 type="button"
-                class="btn btn-danger rounded-pill text-white fw-bold me-4"
+                class="btn btn-danger rounded-pill text-white fw-bold"
               >
                 + Add Prioritization
               </button>
               <button
                 type="button"
-                class="btn btn-success rounded-4 text-white fw-bold me-4"
+                class="btn btn-success rounded-4 text-white fw-bold"
               >
                 <img src="assets/icons/Excel.svg" alt="" /> Download File
               </button>
@@ -66,7 +70,7 @@
       <!-- end title head -->
 
       <!-- form header -->
-      <section class="container-fluid visually-hidden" id="formHeader">
+      <section class="container-fluid visually-hidden mt-5" id="formHeader">
         <div class="bg-white p-3 rounded-4">
           <div class="d-md-flex d-block gap-4">
             <div class="col">
@@ -200,9 +204,9 @@
       <!-- main content -->
       <main>
         <!-- table -->
-        <div class="container-fluid">
-          <div class="table-responsive">
-            <table class="table table-borderless table-spacing">
+        <div class="container-fluid mt-5">
+          <div class="table-responsive table-prioritizen">
+            <table class="table table-borderless table-spacing" id="example">
               <thead>
                 <tr>
                   <th
@@ -236,168 +240,397 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" class="p-3 mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-danger fw-bold">
-                    <i class="fa-solid fa-arrow-trend-down me-2"></i>Low
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-danger fw-bold">
-                    <i class="fa-solid fa-arrow-trend-down me-2"></i>Low
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-danger fw-bold">
-                    <i class="fa-solid fa-arrow-trend-down me-2"></i>Low
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="mt-5 rounded-start-3">2023</th>
-                  <td class="mt-5">1</td>
-                  <td class="mt-5">SIDOARJO</td>
-                  <td class="mt-5">Kediri</td>
-                  <td class="mt-5">Banyakan</td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>High
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
                   </td>
-                  <td class="mt-5 text-success fw-bold">
-                    <i class="fa-solid fa-arrow-trend-up me-2"></i>Win
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="mt-5">
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td
+                    class="text-warning fw-bold align-self-center align-content-center"
+                  >
+                    <img src="assets/icons/TrendMedium.svg" alt="TrendUp" />
+                    <span>Medium</span>
+                  </td>
+
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td
+                    class="text-warning fw-bold align-self-center align-content-center"
+                  >
+                    <img src="assets/icons/TrendMedium.svg" alt="TrendUp" />
+                    <span>Medium</span>
+                  </td>
+
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
+                  </td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
+                  </td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
+                  </td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td
+                    class="text-warning fw-bold align-self-center align-content-center"
+                  >
+                    <img src="assets/icons/TrendMedium.svg" alt="TrendUp" />
+                    <span>Medium</span>
+                  </td>
+
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td
+                    class="text-warning fw-bold align-self-center align-content-center"
+                  >
+                    <img src="assets/icons/TrendMedium.svg" alt="TrendUp" />
+                    <span>Medium</span>
+                  </td>
+
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
+                  </td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td
+                    class="text-warning fw-bold align-self-center align-content-center"
+                  >
+                    <img src="assets/icons/TrendMedium.svg" alt="TrendUp" />
+                    <span>Medium</span>
+                  </td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
+                    <a href="#"
+                      ><i class="fa-solid fa-trash text-danger"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="rounded-start-3">2023</th>
+                  <td class="">1</td>
+                  <td class="">SIDOARJO</td>
+                  <td class="">Kediri</td>
+                  <td class="">Banyakan</td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />High
+                  </td>
+                  <td class="text-danger fw-bold">
+                    <img src="assets/icons/TrendDown.svg" alt="TrendUp" />Low
+                  </td>
+                  <td class="text-success fw-bold">
+                    <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
+                  </td>
+                  <td class="">
                     <a href="#"
                       ><i class="fa-solid fa-trash text-danger"></i
                     ></a>
@@ -408,32 +641,17 @@
           </div>
         </div>
         <!-- end table -->
-        <!-- pagination -->
-        <nav aria-label="Page navigation example" class="mt-5">
-          <ul class="pagination justify-content-center me-5 gap-2">
-            <li class="page-item">
-              <a class="page-link text-black rounded"><</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link text-danger rounded border-danger" href="#"
-                >1</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link text-black rounded" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link text-black rounded" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link text-black rounded" href="#">></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- end pagination -->
+
         <!-- end main content -->
       </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+      new DataTable("#example");
+    </script>
     <script src="main.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

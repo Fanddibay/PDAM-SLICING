@@ -3,8 +3,15 @@
 .headButton {
   button {
     padding: 16px 32px !important;
+    text-align: end !important;
   }
+}
 
+.headButtonPrioritizen {
+  button {
+    padding: 16px 32px !important;
+    margin-right: 24px !important;
+  }
   .btn:nth-child(3) {
     padding: 16px 24px !important;
   }

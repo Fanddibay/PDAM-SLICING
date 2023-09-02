@@ -13,32 +13,9 @@
     align-self: center;
     align-items: center;
   }
+}
 
-  tr td:nth-child(1) {
-    border-radius: 16px 0px 0 16px;
-  }
-  tr td:nth-child(3) {
-    align-self: center;
-    justify-content: center;
-  }
-  tr td:nth-child(4) {
-    align-self: center;
-    justify-content: center;
-  }
-  tr td:nth-child(5) {
-    align-self: center;
-    justify-content: center;
-  }
-  tr td:nth-child(6) {
-    align-self: center;
-    justify-content: center;
-  }
-  tr td:nth-child(7) {
-    border-radius: 0 16px 16px 0;
-    align-self: center;
-    justify-content: center;
-  }
-
+.table-shooping {
   thead,
   tr,
   th:nth-child(1) {
@@ -74,30 +51,363 @@
   th:nth-child(7) {
     width: 138px !important;
   }
+  tr td:nth-child(1) {
+    border-radius: 16px 0px 0 16px !important;
+  }
+  tr td:nth-child(3) {
+    align-self: center;
+    justify-content: center;
+  }
+  tr td:nth-child(4) {
+    align-self: center;
+    justify-content: center;
+  }
+  tr td:nth-child(5) {
+    align-self: center;
+    justify-content: center;
+  }
+  tr td:nth-child(6) {
+    align-self: center;
+    justify-content: center;
+  }
+  tr td:nth-child(7) {
+    border-radius: 0 16px 16px 0;
+    align-self: center;
+    justify-content: center;
+  }
+
+  table.dataTable thead > tr > th.sorting:before,
+  table.dataTable thead > tr > th.sorting:after,
+  table.dataTable thead > tr > th.sorting_asc:before,
+  table.dataTable thead > tr > th.sorting_asc:after,
+  table.dataTable thead > tr > th.sorting_desc:before,
+  table.dataTable thead > tr > th.sorting_desc:after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:after,
+  table.dataTable thead > tr > td.sorting:before,
+  table.dataTable thead > tr > td.sorting:after,
+  table.dataTable thead > tr > td.sorting_asc:before,
+  table.dataTable thead > tr > td.sorting_asc:after,
+  table.dataTable thead > tr > td.sorting_desc:before,
+  table.dataTable thead > tr > td.sorting_desc:after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:after {
+    position: absolute;
+    display: block;
+    opacity: 0.4 !important;
+    color: #910000;
+    right: 50px !important;
+    line-height: 9px;
+    font-size: 0.8em;
+  }
 }
+
+// non aktif filter
 .dataTables_length,
 .dataTables_filter {
   display: none !important;
 }
 
+// non aktif info
+
 .dataTables_info {
   display: none;
 }
 
+// pagination class
 .dataTables_paginate {
   justify-content: center !important;
   text-align: center !important;
-}
-table.dataTable thead > tr > th.sorting_asc:before,
-table.dataTable thead > tr > th.sorting_desc:after,
-table.dataTable thead > tr > td.sorting_asc:before,
-table.dataTable thead > tr > td.sorting_desc:after {
-  opacity: 1;
-  color: #000;
 }
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   /* margin:2px 0; */
   white-space: nowrap;
   justify-content: start !important;
+}
+
+// color sorting
+table.dataTable thead > tr > th.sorting_asc:before,
+table.dataTable thead > tr > th.sorting_desc:after,
+table.dataTable thead > tr > td.sorting_asc:before,
+table.dataTable thead > tr > td.sorting_desc:after {
+  opacity: 1 !important;
+  color: #000 !important;
+}
+
+table.dataTable thead > tr > th.sorting:before,
+table.dataTable thead > tr > th.sorting:after,
+table.dataTable thead > tr > th.sorting_asc:before,
+table.dataTable thead > tr > th.sorting_asc:after,
+table.dataTable thead > tr > th.sorting_desc:before,
+table.dataTable thead > tr > th.sorting_desc:after,
+table.dataTable thead > tr > th.sorting_asc_disabled:before,
+table.dataTable thead > tr > th.sorting_asc_disabled:after,
+table.dataTable thead > tr > th.sorting_desc_disabled:before,
+table.dataTable thead > tr > th.sorting_desc_disabled:after,
+table.dataTable thead > tr > td.sorting:before,
+table.dataTable thead > tr > td.sorting:after,
+table.dataTable thead > tr > td.sorting_asc:before,
+table.dataTable thead > tr > td.sorting_asc:after,
+table.dataTable thead > tr > td.sorting_desc:before,
+table.dataTable thead > tr > td.sorting_desc:after,
+table.dataTable thead > tr > td.sorting_asc_disabled:before,
+table.dataTable thead > tr > td.sorting_asc_disabled:after,
+table.dataTable thead > tr > td.sorting_desc_disabled:before,
+table.dataTable thead > tr > td.sorting_desc_disabled:after {
+  position: absolute;
+  display: block;
+  opacity: 0.4 !important;
+  color: #910000;
+  right: 50px !important;
+  line-height: 9px;
+  font-size: 0.8em;
+}
+
+.table-prioritizen {
+  // none display table 1
+  table.dataTable thead > tr > th.sorting:nth-child(1),
+  table.dataTable thead > tr > th.sorting_asc:nth-child(1),
+  table.dataTable thead > tr > th.sorting_desc:nth-child(1),
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(1),
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(1),
+  table.dataTable thead > tr > td.sorting:nth-child(1),
+  table.dataTable thead > tr > td.sorting_asc:nth-child(1),
+  table.dataTable thead > tr > td.sorting_desc:nth-child(1),
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(1),
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(1) {
+    cursor: text !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(1):before,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(1):before,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(1):before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(1):before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(1):before,
+  table.dataTable thead > tr > td.sorting:nth-child(1):before,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(1):before,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(1):before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(1):before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(1):before {
+    opacity: 0 !important;
+    cursor: copy !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(1):after,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(1):after,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(1):after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(1):after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(1):after,
+  table.dataTable thead > tr > td.sorting:nth-child(1):after,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(1):after,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(1):after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(1):after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(1):after {
+    opacity: 0 !important;
+    cursor: copy !important;
+  }
+
+  // none display table 2
+  table.dataTable thead > tr > th.sorting:nth-child(2),
+  table.dataTable thead > tr > th.sorting_asc:nth-child(2),
+  table.dataTable thead > tr > th.sorting_desc:nth-child(2),
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(2),
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(2),
+  table.dataTable thead > tr > td.sorting:nth-child(2),
+  table.dataTable thead > tr > td.sorting_asc:nth-child(2),
+  table.dataTable thead > tr > td.sorting_desc:nth-child(2),
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(2),
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(2) {
+    cursor: text !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(2):before,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(2):before,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(2):before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(2):before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(2):before,
+  table.dataTable thead > tr > td.sorting:nth-child(2):before,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(2):before,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(2):before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(2):before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(2):before {
+    opacity: 0 !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(2):after,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(2):after,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(2):after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(2):after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(2):after,
+  table.dataTable thead > tr > td.sorting:nth-child(2):after,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(2):after,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(2):after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(2):after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(2):after {
+    opacity: 0 !important;
+  }
+
+  // none display table 3
+  table.dataTable thead > tr > th.sorting:nth-child(3),
+  table.dataTable thead > tr > th.sorting_asc:nth-child(3),
+  table.dataTable thead > tr > th.sorting_desc:nth-child(3),
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(3),
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(3),
+  table.dataTable thead > tr > td.sorting:nth-child(3),
+  table.dataTable thead > tr > td.sorting_asc:nth-child(3),
+  table.dataTable thead > tr > td.sorting_desc:nth-child(3),
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(3),
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(3) {
+    cursor: text !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(3):before,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(3):before,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(3):before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(3):before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(3):before,
+  table.dataTable thead > tr > td.sorting:nth-child(3):before,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(3):before,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(3):before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(3):before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(3):before {
+    opacity: 0 !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(3):after,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(3):after,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(3):after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(3):after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(3):after,
+  table.dataTable thead > tr > td.sorting:nth-child(3):after,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(3):after,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(3):after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(3):after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(3):after {
+    opacity: 0 !important;
+  }
+
+  // none display table 4
+  table.dataTable thead > tr > th.sorting:nth-child(4),
+  table.dataTable thead > tr > th.sorting_asc:nth-child(4),
+  table.dataTable thead > tr > th.sorting_desc:nth-child(4),
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(4),
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(4),
+  table.dataTable thead > tr > td.sorting:nth-child(4),
+  table.dataTable thead > tr > td.sorting_asc:nth-child(4),
+  table.dataTable thead > tr > td.sorting_desc:nth-child(4),
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(4),
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(4) {
+    cursor: text !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(4):before,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(4):before,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(4):before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(4):before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(4):before,
+  table.dataTable thead > tr > td.sorting:nth-child(4):before,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(4):before,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(4):before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(4):before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(4):before {
+    opacity: 0 !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(4):after,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(4):after,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(4):after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(4):after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(4):after,
+  table.dataTable thead > tr > td.sorting:nth-child(4):after,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(4):after,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(4):after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(4):after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(4):after {
+    opacity: 0 !important;
+  }
+
+  // none display table 5
+  table.dataTable thead > tr > th.sorting:nth-child(5),
+  table.dataTable thead > tr > th.sorting_asc:nth-child(5),
+  table.dataTable thead > tr > th.sorting_desc:nth-child(5),
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(5),
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(5),
+  table.dataTable thead > tr > td.sorting:nth-child(5),
+  table.dataTable thead > tr > td.sorting_asc:nth-child(5),
+  table.dataTable thead > tr > td.sorting_desc:nth-child(5),
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(5),
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(5) {
+    cursor: text !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(5):before,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(5):before,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(5):before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(5):before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(5):before,
+  table.dataTable thead > tr > td.sorting:nth-child(5):before,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(5):before,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(5):before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(5):before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(5):before {
+    opacity: 0 !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(5):after,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(5):after,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(5):after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(5):after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(5):after,
+  table.dataTable thead > tr > td.sorting:nth-child(5):after,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(5):after,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(5):after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(5):after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(5):after {
+    opacity: 0 !important;
+  }
+
+  // none display table 9
+
+  table.dataTable thead > tr > th.sorting:nth-child(9),
+  table.dataTable thead > tr > th.sorting_asc:nth-child(9),
+  table.dataTable thead > tr > th.sorting_desc:nth-child(9),
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(9),
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(9),
+  table.dataTable thead > tr > td.sorting:nth-child(9),
+  table.dataTable thead > tr > td.sorting_asc:nth-child(9),
+  table.dataTable thead > tr > td.sorting_desc:nth-child(9),
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(9),
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(9) {
+    cursor: text !important;
+  }
+  table.dataTable thead > tr > th.sorting:nth-child(9):before,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(9):before,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(9):before,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(9):before,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(9):before,
+  table.dataTable thead > tr > td.sorting:nth-child(9):before,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(9):before,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(9):before,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(9):before,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(9):before {
+    opacity: 0 !important;
+  }
+
+  table.dataTable thead > tr > th.sorting:nth-child(9):after,
+  table.dataTable thead > tr > th.sorting_asc:nth-child(9):after,
+  table.dataTable thead > tr > th.sorting_desc:nth-child(9):after,
+  table.dataTable thead > tr > th.sorting_asc_disabled:nth-child(9):after,
+  table.dataTable thead > tr > th.sorting_desc_disabled:nth-child(9):after,
+  table.dataTable thead > tr > td.sorting:nth-child(9):after,
+  table.dataTable thead > tr > td.sorting_asc:nth-child(9):after,
+  table.dataTable thead > tr > td.sorting_desc:nth-child(9):after,
+  table.dataTable thead > tr > td.sorting_asc_disabled:nth-child(9):after,
+  table.dataTable thead > tr > td.sorting_desc_disabled:nth-child(9):after {
+    opacity: 0 !important;
+  }
 }
