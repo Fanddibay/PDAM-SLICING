@@ -18,7 +18,7 @@
       href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
     />
   </head>
-  <body class="bg-secondary">
+  <body class="bg-dark">
     <div class="bg-light container-body">
       <!-- header -->
 
@@ -177,8 +177,8 @@
               </div>
             </div>
 
-            <div class="col text-end">
-              <div class="flex mt-5">
+            <div class="col align-self-center text-end">
+              <div class="mt-4">
                 <button type="button" class="btn text-danger fw-bold">
                   Reset
                 </button>
@@ -205,8 +205,8 @@
       <main>
         <!-- table -->
         <div class="container-fluid mt-5">
-          <div class="table-responsive table-prioritizen">
-            <table class="table table-borderless table-spacing" id="example">
+          <div class="table-responsive">
+            <table class="table table-borderless table-spacing">
               <thead>
                 <tr>
                   <th
@@ -642,6 +642,25 @@
         </div>
         <!-- end table -->
 
+        <!-- pagination -->
+        <nav aria-label="...">
+          <ul class="pagination gap-2 justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link"><</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link border-danger" href="#">1</a>
+            </li>
+            <li class="page-item" aria-current="page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end pagination -->
         <!-- end main content -->
       </main>
     </div>
