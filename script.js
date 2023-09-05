@@ -1,74 +1,3 @@
-const showFilter = document.getElementById("showFilter");
-const filters = document.getElementById("formHeader");
-const showTextRemove = document.getElementById("hideFilter");
-
-showFilter.addEventListener("click", () => {
-  if (filters.classList.contains("visually-hidden")) {
-    filters.classList.remove("visually-hidden");
-    showFilter.classList.add("visually-hidden");
-  } else {
-    filters.classList.add("visually-hidden");
-  }
-});
-
-showTextRemove.addEventListener("click", () => {
-  if (filters.classList.contains("visually-hidden")) {
-    filters.classList.remove("visually-hidden");
-    showTextRemove.classList.remove("visually-hidden");
-  } else {
-    filters.classList.add("visually-hidden");
-  }
-});
-
-const body = document.querySelector("body"),
-  sidebar = body.querySelector(".sidebar"),
-  toggle = body.querySelector(".toggle");
-const header = document.querySelector("header");
-const p = header.querySelector("p");
-
-toggle.addEventListener("click", () => {
-  if (sidebar.classList.contains("close")) {
-    sidebar.classList.toggle("close");
-    header.classList.add("d-flex");
-  } else {
-    header.classList.remove("d-flex");
-    sidebar.classList.add("close");
-  }
-});
-
-const openShow = document.getElementById("openShow");
-const closeShow = document.getElementById("closeShow");
-
-openShow.addEventListener("click", () => {
-  if (closeShow.classList.contains("visually-hidden")) {
-    closeShow.classList.remove("visually-hidden");
-    openShow.classList.add("visually-hidden");
-  } else {
-    closeShow.classList.add("visually-hidden");
-  }
-});
-closeShow.addEventListener("click", () => {
-  if (sidebar.classList.contains("close")) {
-    sidebar.classList.toggle("close");
-    header.classList.add("d-flex");
-  } else {
-    header.classList.remove("d-flex");
-    sidebar.classList.add("close");
-    closeShow.classList.add("visually-hidden");
-    openShow.classList.remove("visually-hidden");
-  }
-});
-const accordionButtons = document.querySelectorAll(".accordion-button");
-const accordionContents = document.querySelectorAll(".accordion-content");
-
-accordionButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.parentElement.classList.toggle("active");
-    const content = button.nextElementSibling;
-    content.classList.toggle("visually-hidden");
-  });
-});
-
 // Fungsi untuk menyembunyikan semua elemen dengan kelas 'sidebar-dropdown-menu'
 function hideAllDropdownMenus() {
   const dropdownMenus = document.querySelectorAll(".sidebar-dropdown-menu");
@@ -101,6 +30,39 @@ dropdownItems.forEach((item) => {
     parent.classList.toggle("focused");
   });
 });
+
+// // Mengambil elemen dengan kelas 'sidebar-toggle'
+// const sidebarToggle = document.querySelector(".sidebar-toggle");
+// sidebarToggle.addEventListener("click", function () {
+//   const sidebar = document.querySelector(".sidebar");
+//   sidebar.classList.toggle("collapsed");
+
+//   if (sidebar.classList.contains("collapsed")) {
+//     sidebar.addEventListener("mouseleave", function () {
+//       hideAllDropdownMenus();
+//       const dropdownItems = document.querySelectorAll(
+//         ".sidebar-menu-item.has-dropdown, .sidebar-dropdown-menu-item.has-dropdown"
+//       );
+//       dropdownItems.forEach((item) => {
+//         item.classList.remove("focused");
+//       });
+//     });
+//   }
+// });
+
+// // Mengambil elemen dengan kelas 'sidebar-overlay'
+// const sidebarOverlay = document.querySelector(".sidebar-overlay");
+// sidebarOverlay.addEventListener("click", function () {
+//   const sidebar = document.querySelector(".sidebar");
+//   sidebar.classList.add("collapsed");
+//   hideAllDropdownMenus();
+//   const dropdownItems = document.querySelectorAll(
+//     ".sidebar-menu-item.has-dropdown, .sidebar-dropdown-menu-item.has-dropdown"
+//   );
+//   dropdownItems.forEach((item) => {
+//     item.classList.remove("focused");
+//   });
+// });
 
 // Memeriksa lebar layar dan menambahkan kelas 'collapsed' jika lebar kurang dari 768px
 if (window.innerWidth < 768) {

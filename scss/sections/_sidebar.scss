@@ -1,1 +1,182 @@
 @use "../custom" as *;
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #14142b;
+  --primary-color: #373751;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #fcfcfc;
+
+  --trans-02: all- 0.2s sease;
+  --trans-03: all- 0.3s sease;
+  --trans-04: all- 0.4s sease;
+  --trans-05: all- 0.5s sease;
+}
+
+/* ======= Sidebar =======*/
+
+header a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+header a span {
+  border: 2px solid #373751;
+  color: red;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 284px;
+  background: var(--sidebar-color);
+  transition: var(--trans-05);
+  border-radius: 24px 0 0px 24px !important;
+  color: white !important;
+}
+.sidebar ul li {
+  list-style: none !important;
+}
+
+.sidebar ul li a {
+  color: white !important;
+}
+
+.sidebar.close {
+  width: 88px;
+  border-radius: 24px !important;
+}
+
+.sidebar.close header div span {
+  display: none;
+}
+
+/* ======= Reuseable CSS =======*/
+.sidebars .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: var(--trans-04);
+  white-space: nowrap;
+}
+
+.sidebar.close .text {
+  opacity: 0 !important;
+}
+
+.sidebars li {
+  height: 50px;
+  margin-top: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li .icon,
+.sidebar li .text {
+  color: var(--text-color);
+  transition: var(--trans-02);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.sidebar header .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: start;
+  transition: var(--trans-04);
+  margin-left: -12px;
+  padding: 12px;
+}
+
+.sidebar li a:hover {
+  background: var(--primary-color);
+  border-radius: 24px 0 0 24px;
+}
+
+.sidebar-menu-item-accordion {
+  transition: transform 0.2s;
+}
+.sidebar-dropdown-menu-item.focused > a .sidebar-menu-item-accordion,
+.sidebar-menu-item.focused > a .sidebar-menu-item-accordion {
+  transform: rotateZ(180deg);
+}
+
+// end sidebar
+
+// /* CSS untuk tombol ketika accordion terbuka */
+// .active .accordion-button::after {
+//   content: "- ";
+//   color: white;
+// }
+// /* CSS untuk tombol ketika accordion terbuka */
+// .sidebar.close div ul li a.accordion-button::after {
+//   opacity: 0;
+// }
+
+// .sidebar.collapsed ~ .sidebar-overlay {
+//   opacity: 0;
+//   visibility: hidden;
+// }
+// .sidebar.collapsed:hover,
+// .sidebar {
+//   width: 16rem;
+//   overflow-y: auto;
+//   transition: width 0.2s, left 0.2s;
+//   left: 0;
+//   z-index: 500;
+// }
+
+// .sidebar-toggle {
+//   cursor: pointer;
+//   transition: 0.2s;
+//   color: white;
+// }
+
+// .sidebar-menu {
+//   list-style-type: none;
+// }
+// .sidebar-menu-item {
+//   margin-bottom: 0.25rem;
+// }
+
+// .sidebar-menu-item.focused > a,
+// .sidebar-menu-item > a:hover {
+//   background-color: var(--bs-gray-200);
+// }
+// .sidebar-menu-item.active a {
+//   background-color: var(--bs-indigo);
+//   color: var(--bs-light);
+//   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.175);
+// }
+// .sidebar-menu-item-icon {
+//   margin-right: 0.625rem;
+//   font-size: 1.25rem;
+// }
+
+// .sidebar.collapsed:hover .sidebar-menu-divider,
+// .sidebar-menu-divider {
+//   font-size: 0.75rem;
+//   color: var(--bs-gray-600);
+//   transition: opacity 0.2s;
+//   opacity: 1;
+//   visibility: visible;
+// }

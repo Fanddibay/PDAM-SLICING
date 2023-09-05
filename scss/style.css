@@ -12054,6 +12054,7 @@ textarea.form-control-lg {
   border: red 2px;
 }
 
+/* CSS untuk accordion */
 .container-body {
   padding: 32px !important;
   border-radius: 24px;
@@ -12073,6 +12074,131 @@ textarea.form-control-lg {
 
 .-mt-5 {
   margin-top: -12px;
+}
+
+.-mt-32 {
+  margin-top: -32px !important;
+}
+
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #14142b;
+  --primary-color: #373751;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #fcfcfc;
+  --trans-02: all- 0.2s sease;
+  --trans-03: all- 0.3s sease;
+  --trans-04: all- 0.4s sease;
+  --trans-05: all- 0.5s sease;
+}
+
+/* ======= Sidebar =======*/
+header a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+header a span {
+  border: 2px solid #373751;
+  color: red;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 284px;
+  background: var(--sidebar-color);
+  transition: var(--trans-05);
+  border-radius: 24px 0 0px 24px !important;
+  color: white !important;
+}
+
+.sidebar ul li {
+  list-style: none !important;
+}
+
+.sidebar ul li a {
+  color: white !important;
+}
+
+.sidebar.close {
+  width: 88px;
+  border-radius: 24px !important;
+}
+
+.sidebar.close header div span {
+  display: none;
+}
+
+/* ======= Reuseable CSS =======*/
+.sidebars .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: var(--trans-04);
+  white-space: nowrap;
+}
+
+.sidebar.close .text {
+  opacity: 0 !important;
+}
+
+.sidebars li {
+  height: 50px;
+  margin-top: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li .icon,
+.sidebar li .text {
+  color: var(--text-color);
+  transition: var(--trans-02);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.sidebar header .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: start;
+  transition: var(--trans-04);
+  margin-left: -12px;
+  padding: 12px;
+}
+
+.sidebar li a:hover {
+  background: var(--primary-color);
+  border-radius: 24px 0 0 24px;
+}
+
+.sidebar-menu-item-accordion {
+  transition: transform 0.2s;
+}
+
+.sidebar-dropdown-menu-item.focused > a .sidebar-menu-item-accordion,
+.sidebar-menu-item.focused > a .sidebar-menu-item-accordion {
+  transform: rotateZ(180deg);
 }
 
 .table-spacing {

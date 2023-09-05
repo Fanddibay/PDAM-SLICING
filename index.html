@@ -13,188 +13,196 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
     />
   </head>
   <body class="bg-dark">
     <div class="bg-light container-body">
       <!-- header -->
-
-      <!-- title head -->
-      <section class="container-fluid">
-        <div class="">
-          <div class="d-md-flex d-block justify-content-between">
-            <div>
-              <!-- breadcrumb -->
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#" class="text-black-50 text-decoration-none"
-                    >Kalimantan</a
-                  >
-                </li>
-                <li class="breadcrumb-item" aria-current="page">
-                  Prioritization - subdistrict
-                </li>
-              </ul>
-              <h6 class="fs-3 fw-bold -mt-5">Prioritization - subdistrict</h6>
-              <!-- end breadcrumb -->
-            </div>
-            <div
-              class="headButtonPrioritizen align-self-center justify-content-center d-inline-grid gap-sm-4 gap-md-0 d-md-flex"
-            >
-              <button
-                type="button"
-                class="btn btn-danger rounded-pill text-white fw-bold"
+      <head>
+        <!-- title head -->
+        <section class="container-fluid">
+          <div class="">
+            <div class="d-md-flex d-block justify-content-between">
+              <div>
+                <!-- breadcrumb -->
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#" class="text-black-50 text-decoration-none"
+                      >Kalimantan</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    Prioritization - subdistrict
+                  </li>
+                </ul>
+                <h6 class="fs-3 fw-bold -mt-5">Prioritization - subdistrict</h6>
+                <!-- end breadcrumb -->
+              </div>
+              <div
+                class="headButtonPrioritizen align-self-center justify-content-center d-inline-grid gap-sm-4 gap-md-0 d-md-flex"
               >
-                + Add Prioritization
-              </button>
-              <button
-                type="button"
-                class="btn btn-success rounded-4 text-white fw-bold"
-              >
-                <img src="assets/icons/Excel.svg" alt="" /> Download File
-              </button>
-              <button
-                type="button"
-                class="btn btn shadow-lg fw-bold"
-                id="showFilter"
-              >
-                <img src="assets/icons/Filters.svg" alt="" /> Hide Filters
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end title head -->
-
-      <!-- form header -->
-      <section class="container-fluid visually-hidden mt-5" id="formHeader">
-        <div class="bg-white p-3 rounded-4">
-          <div class="d-md-flex d-block gap-4">
-            <div class="col">
-              <div class="text-start select-input">
-                <label class="fs-6 fw-bold mb-2" for="SelectDate">Year</label>
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="SelectDate"
+                <button
+                  type="button"
+                  class="btn btn-danger rounded-pill text-white fw-bold"
                 >
-                  <option selected>Select Year</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-            <div class="col">
-              <div class="text-start select-input">
-                <label class="fs-6 fw-bold mb-2" for="SelectDate"
-                  >Quarter</label
-                >
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="SelectDate"
-                >
-                  <option selected>Select Quarter</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-            <div class="col">
-              <div class="text-start select-input">
-                <label class="fs-6 fw-bold mb-2" for="SelectDate"
-                  >Sub-district</label
-                >
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="SelectDate"
-                >
-                  <option selected>Select Sub-district</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-            <div class="col"></div>
-          </div>
-          <div class="d-md-flex d-block gap-4">
-            <div class="col">
-              <div class="text-start select-input">
-                <label class="fs-6 fw-bold mb-2" for="SelectDate"
-                  >HRC Index</label
-                >
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="SelectDate"
-                >
-                  <option selected>Select HRC Index</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-            <div class="col">
-              <div class="text-start select-input">
-                <label class="fs-6 fw-bold mb-2" for="SelectDate"
-                  >Payload Index</label
-                >
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="SelectDate"
-                >
-                  <option selected>Select Payload Index</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-            <div class="col">
-              <div class="text-start select-input">
-                <label class="fs-6 fw-bold mb-2" for="SelectDate"
-                  >Payload Share</label
-                >
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="SelectDate"
-                >
-                  <option selected>Select Payload Share</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col align-self-center text-end">
-              <div class="mt-4">
-                <button type="button" class="btn text-danger fw-bold">
-                  Reset
+                  + Add Prioritization
                 </button>
                 <button
                   type="button"
-                  class="btn btn-danger px-5 rounded-pill text-white"
+                  class="btn btn-success rounded-4 text-white fw-bold"
                 >
-                  Apply
+                  <img src="assets/icons/Excel.svg" alt="" /> Download File
+                </button>
+                <button
+                  type="button"
+                  class="btn btn shadow-lg fw-bold"
+                  id="showFilter"
+                >
+                  <img src="assets/icons/Filters.svg" alt="" /> Show Filters
+                </button>
+                <button
+                  type="button"
+                  class="btn btn shadow-lg fw-bold visually-hidden"
+                  id="hideFilter"
+                >
+                  <img src="assets/icons/Filters.svg" alt="" /> Hide Filters
                 </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- endform header -->
+        </section>
+        <!-- end title head -->
 
+        <!-- form header -->
+        <section class="container-fluid visually-hidden mt-5" id="formHeader">
+          <div class="bg-white p-3 rounded-4">
+            <div class="d-md-flex d-block gap-4">
+              <div class="col">
+                <div class="text-start select-input">
+                  <label class="fs-6 fw-bold mb-2" for="SelectDate">Year</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectDate"
+                  >
+                    <option selected>Select Year</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-start select-input">
+                  <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                    >Quarter</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectDate"
+                  >
+                    <option selected>Select Quarter</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-start select-input">
+                  <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                    >Sub-district</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectDate"
+                  >
+                    <option selected>Select Sub-district</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="d-md-flex d-block gap-4">
+              <div class="col">
+                <div class="text-start select-input">
+                  <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                    >HRC Index</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectDate"
+                  >
+                    <option selected>Select HRC Index</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-start select-input">
+                  <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                    >Payload Index</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectDate"
+                  >
+                    <option selected>Select Payload Index</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-start select-input">
+                  <label class="fs-6 fw-bold mb-2" for="SelectDate"
+                    >Payload Share</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectDate"
+                  >
+                    <option selected>Select Payload Share</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col align-self-center text-end">
+                <div class="mt-4">
+                  <button type="button" class="btn text-danger fw-bold">
+                    Reset
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger px-5 rounded-pill text-white"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- endform header -->
+      </head>
       <!-- end header -->
 
       <!-- side navbar -->
@@ -265,7 +273,7 @@
           </li>
           <li class="sidebar-menu-item has-dropdown">
             <a href="#" class="gap-4" id="sidebarMenu2">
-              <img src="/assets/icons/Support.png" alt="" />
+              <img src="/assets/icons/Support.svg" alt="" />
               <span class="text nav-text">Shopping List</span>
               <i
                 class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
@@ -289,7 +297,7 @@
 
           <li class="sidebar-menu-item has-dropdown">
             <a href="#" class="gap-4" id="sidebarMenu3">
-              <img src="/assets/icons/UserManagement.png" alt="" />
+              <img src="/assets/icons/UserProfile.svg" alt="" />
               <span class="text nav-text">My Tasks</span>
               <i
                 class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
@@ -782,7 +790,6 @@
     </div>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="main.js"></script>
 
     <script src="main.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
