@@ -1,30 +1,9 @@
-const showFilter = document.getElementById("showFilter");
-const filters = document.getElementById("formHeader");
-const showTextRemove = document.getElementById("hideFilter");
-
-showFilter.addEventListener("click", () => {
-  if (filters.classList.contains("visually-hidden")) {
-    filters.classList.remove("visually-hidden");
-    showFilter.classList.add("visually-hidden");
-  } else {
-    filters.classList.add("visually-hidden");
-  }
-});
-
-showTextRemove.addEventListener("click", () => {
-  if (filters.classList.contains("visually-hidden")) {
-    filters.classList.remove("visually-hidden");
-    showTextRemove.classList.remove("visually-hidden");
-  } else {
-    filters.classList.add("visually-hidden");
-  }
-});
+// logic sidebar toggle
 
 const body = document.querySelector("body"),
   sidebar = body.querySelector(".sidebar"),
-  toggle = body.querySelector(".toggle");
-const header = document.querySelector("header");
-const p = header.querySelector("p");
+  toggle = body.querySelector(".toggle"),
+  header = document.querySelector("header");
 
 toggle.addEventListener("click", () => {
   if (sidebar.classList.contains("close")) {
@@ -76,14 +55,14 @@ function hideAllDropdownMenus() {
     menu.style.display = "none";
   });
 }
-
+// sidebar-menu-item has-dropdown
 // Mengambil semua elemen dengan kelas 'has-dropdown' yang merupakan item dengan dropdown
 const dropdownItems = document.querySelectorAll(
   ".sidebar-menu-item.has-dropdown > a, .sidebar-dropdown-menu-item.has-dropdown > a"
 );
 dropdownItems.forEach((item) => {
   item.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault(); // Hapus atau komentari baris ini
 
     const parent = this.parentElement;
 
@@ -119,28 +98,6 @@ showSidebar.addEventListener("click", () => {
   }
 });
 
-const showSidebar2 = document.getElementById("sidebarMenu1");
-const sidebarMenu2 = document.getElementById("showSidebarMenu1");
-
-showSidebar2.addEventListener("click", () => {
-  if (sidebarMenu2.classList.contains("visually-hidden")) {
-    sidebarMenu2.classList.remove("visually-hidden");
-  } else {
-    sidebarMenu2.classList.add("visually-hidden");
-  }
-});
-
-const showSidebar3 = document.getElementById("sidebarMenu2");
-const sidebarMenu3 = document.getElementById("showSidebarMenu2");
-
-showSidebar3.addEventListener("click", () => {
-  if (sidebarMenu3.classList.contains("visually-hidden")) {
-    sidebarMenu3.classList.remove("visually-hidden");
-  } else {
-    sidebarMenu3.classList.add("visually-hidden");
-  }
-});
-
 const showSidebar4 = document.getElementById("sidebarMenu3");
 const sidebarMenu4 = document.getElementById("showSidebarMenu3");
 
@@ -149,5 +106,36 @@ showSidebar4.addEventListener("click", () => {
     sidebarMenu4.classList.remove("visually-hidden");
   } else {
     sidebarMenu4.classList.add("visually-hidden");
+  }
+});
+
+const showFilter = document.getElementById("showFilter");
+const filters = document.getElementById("formHeader");
+const showTextRemove = document.getElementById("hideFilter");
+
+showFilter.addEventListener("click", () => {
+  if (filters.classList.contains("visually-hidden")) {
+    filters.classList.remove("visually-hidden");
+    showFilter.classList.add("visually-hidden");
+  } else {
+    filters.classList.add("visually-hidden");
+  }
+});
+showFilter.addEventListener("click", () => {
+  if (showTextRemove.classList.contains("visually-hidden")) {
+    showTextRemove.classList.remove("visually-hidden");
+  } else {
+    filters.classList.add("visually-hidden");
+  }
+});
+
+showTextRemove.addEventListener("click", () => {
+  if (filters.classList.contains("visually-hidden")) {
+    filters.classList.remove("visually-hidden");
+    showTextRemove.classList.add("visually-hidden");
+  } else {
+    filters.classList.add("visually-hidden");
+    showTextRemove.classList.add("visually-hidden");
+    showFilter.classList.remove("visually-hidden");
   }
 });

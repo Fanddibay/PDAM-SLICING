@@ -12051,10 +12051,14 @@ textarea.form-control-lg {
   gap: 8px;
 }
 .select-input .form-select:focus {
-  border: red 2px;
+  border: red 2px solid !important;
+  border-color: red 2px !important;
 }
 
-/* CSS untuk accordion */
+.pagination li a:first-child {
+  color: red !important;
+}
+
 .container-body {
   padding: 32px !important;
   border-radius: 24px;
@@ -12213,4 +12217,16 @@ header a span {
   line-height: 20px;
   align-self: center;
   align-items: center;
+}
+
+.KeyDriversTable tr th {
+  opacity: 0;
+}
+
+.KeyDriversTable tr td:nth-child(2) {
+  border-radius: 24px 0 0 24px !important;
+}
+
+.KeyDriversTable tr td:last-child {
+  border-radius: 0 24px 24px 0 !important;
 }/*# sourceMappingURL=style.css.map */

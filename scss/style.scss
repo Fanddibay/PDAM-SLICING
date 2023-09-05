@@ -4,11 +4,9 @@
 
 @use "components/button";
 @use "components/input";
-@use "components/microTable";
-@use "components/mixins";
+@use "components/pagination";
 
 // sections
 @use "sections/margin";
 @use "sections/sidebar";
 @use "sections/table";
-@use "sections/navigation";

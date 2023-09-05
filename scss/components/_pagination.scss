@@ -1,0 +1,5 @@
+@use "../custom" as *;
+
+.pagination li a:first-child {
+  color: red !important;
+}

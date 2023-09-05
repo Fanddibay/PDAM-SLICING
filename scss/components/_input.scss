@@ -15,6 +15,7 @@
   }
 
   .form-select:focus {
-    border: red 2px;
+    border: red 2px solid !important;
+    border-color: red 2px !important;
   }
 }

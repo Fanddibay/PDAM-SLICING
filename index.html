@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Prioritization - subdistrict</title>
+    <!-- css output -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
+    <!-- remix icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -206,10 +201,10 @@
       <!-- end header -->
 
       <!-- side navbar -->
-      <div class="sidebar close overflow-x-hidden">
+      <nav class="sidebar close overflow-x-hidden">
         <header class="align-self-center gap-5 mt-5 justify-content-between">
           <div class="text text-danger">
-            <span class="name ms-3">HRC PDAM</span>
+            <span class="name ms-3 fw-bolder">HRC PDAM</span>
           </div>
           <a class="d-flex text-white gap-1 toggle pt-3" id="openShow">
             OPEN<span>></span>
@@ -224,8 +219,8 @@
         <ul class="sidebar-menu ps-4 pt-4 pb-4">
           <li class="sidebar-menu-item has-dropdown">
             <a href="#" class="gap-4" id="sidebarMenu">
-              <img src="/assets/icons/RegionalOverview.svg" alt="" />
-              <span class="nav-text text">Action Plan</span>
+              <img src="/assets/icons/FavoriteChart.svg" alt="" />
+              <span class="nav-text text">Prioritization</span>
               <i
                 class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
               ></i>
@@ -235,70 +230,30 @@
               id="showSidebarMenu"
             >
               <li class="sidebar-dropdown-menu-item text">
-                <a href="#"> Key Driver </a>
+                <a href="index.html"> Sub-District </a>
               </li>
               <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Top Performing Key Drivers </a>
-              </li>
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#">Support Data </a>
+                <a href="KeyDriverData.html"> Key Driver Data </a>
               </li>
             </ul>
           </li>
           <li class="sidebar-menu-item has-dropdown">
             <a href="#" class="gap-4" id="sidebarMenu1">
-              <img src="/assets/icons/RegionalPDAM.svg" alt="" />
-              <span class="text nav-text">Monitoring</span>
-              <i
-                class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
-              ></i>
+              <img src="/assets/icons/Diagnosis.svg" alt="" />
+              <span class="text nav-text">Diagnosis</span>
             </a>
-            <ul
-              class="sidebar-dropdown-menu visually-hidden"
-              id="showSidebarMenu1"
-            >
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Regional Prioritization </a>
-              </li>
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Action Theme Trend </a>
-              </li>
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#">
-                  Regional Monitoring <br />
-                  - Action Plan
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="sidebar-menu-item has-dropdown">
             <a href="#" class="gap-4" id="sidebarMenu2">
               <img src="/assets/icons/Support.svg" alt="" />
-              <span class="text nav-text">Shopping List</span>
-              <i
-                class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
-              ></i>
+              <span class="text nav-text">Action Plan</span>
             </a>
-            <ul
-              class="sidebar-dropdown-menu visually-hidden"
-              id="showSidebarMenu2"
-            >
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Support received </a>
-              </li>
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Support requested​ </a>
-              </li>
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Request support​ </a>
-              </li>
-            </ul>
           </li>
 
           <li class="sidebar-menu-item has-dropdown">
             <a href="#" class="gap-4" id="sidebarMenu3">
               <img src="/assets/icons/UserProfile.svg" alt="" />
-              <span class="text nav-text">My Tasks</span>
+              <span class="text nav-text">Monitoring</span>
               <i
                 class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
               ></i>
@@ -308,21 +263,31 @@
               id="showSidebarMenu3"
             >
               <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Shop </a>
+                <a href="#"> Monitoring - Activity </a>
               </li>
               <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Checkout </a>
+                <a href="#"> Monitoring - Results </a>
               </li>
               <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Details </a>
-              </li>
-              <li class="sidebar-dropdown-menu-item">
-                <a href="#"> Wishlist </a>
+                <a href="#"> Monitoring - Support​ Needed </a>
               </li>
             </ul>
           </li>
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="ShoopingList.html" class="gap-4" id="sidebarMenu2">
+              <img src="/assets/icons/ChartSuccess.svg" alt="" />
+              <span class="text nav-text">Shooping List</span>
+            </a>
+          </li>
+
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="#" class="gap-4" id="sidebarMenu2">
+              <img src="/assets/icons/TaskSquare.svg" alt="" />
+              <span class="text nav-text">My Task</span>
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
       <!-- end side navbar -->
 
       <!-- main content -->
@@ -364,7 +329,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -378,14 +343,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -399,14 +362,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -420,14 +381,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -441,14 +400,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -462,14 +419,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -483,14 +438,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -504,14 +457,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -525,14 +476,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -550,14 +499,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -575,14 +522,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -596,14 +541,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -617,14 +560,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -638,14 +579,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -663,14 +602,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -688,14 +625,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -709,14 +644,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -733,14 +666,12 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" class="rounded-start-3">2023</th>
+                  <th scope="row" class="rounded-start-4">2023</th>
                   <td class="">1</td>
                   <td class="">SIDOARJO</td>
                   <td class="">Kediri</td>
@@ -754,10 +685,8 @@
                   <td class="text-success fw-bold">
                     <img src="assets/icons/TrendUp.svg" alt="TrendUp" />Win
                   </td>
-                  <td class="">
-                    <a href="#"
-                      ><i class="fa-solid fa-trash text-danger"></i
-                    ></a>
+                  <td class="rounded-end-4">
+                    <a href="#"> <img src="/assets/icons/Dump.svg" alt="" /></a>
                   </td>
                 </tr>
               </tbody>

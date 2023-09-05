@@ -15,3 +15,16 @@
     align-items: center;
   }
 }
+
+// key driver tables styling
+.KeyDriversTable tr th {
+  opacity: 0;
+}
+
+.KeyDriversTable tr td:nth-child(2) {
+  border-radius: 24px 0 0 24px !important;
+}
+
+.KeyDriversTable tr td:last-child {
+  border-radius: 0 24px 24px 0 !important;
+}

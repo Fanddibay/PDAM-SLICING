@@ -5,18 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shooping List</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
+    <!-- css output -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- remix icon -->
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
     />
   </head>
   <body class="bg-dark">
@@ -117,7 +113,93 @@
       <!-- end header -->
 
       <!-- side navbar -->
+      <nav class="sidebar close overflow-x-hidden">
+        <header class="align-self-center gap-5 mt-5 justify-content-between">
+          <div class="text text-danger">
+            <span class="name ms-3 fw-bolder">HRC PDAM</span>
+          </div>
+          <a class="d-flex text-white gap-1 toggle pt-3" id="openShow">
+            OPEN<span>></span>
+          </a>
+          <a
+            class="d-flex text-white gap-1 toggle visually-hidden me-3"
+            id="closeShow"
+          >
+            CLOSE<span><</span>
+          </a>
+        </header>
+        <ul class="sidebar-menu ps-4 pt-4 pb-4">
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="#" class="gap-4" id="sidebarMenu">
+              <img src="/assets/icons/FavoriteChart.svg" alt="" />
+              <span class="nav-text text">Prioritization</span>
+              <i
+                class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
+              ></i>
+            </a>
+            <ul
+              class="sidebar-dropdown-menu visually-hidden"
+              id="showSidebarMenu"
+            >
+              <li class="sidebar-dropdown-menu-item text">
+                <a href="index.html"> Sub-District </a>
+              </li>
+              <li class="sidebar-dropdown-menu-item">
+                <a href="KeyDriverData.html"> Key Driver Data </a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="#" class="gap-4" id="sidebarMenu1">
+              <img src="/assets/icons/Diagnosis.svg" alt="" />
+              <span class="text nav-text">Diagnosis</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="#" class="gap-4" id="sidebarMenu2">
+              <img src="/assets/icons/Support.svg" alt="" />
+              <span class="text nav-text">Action Plan</span>
+            </a>
+          </li>
 
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="#" class="gap-4" id="sidebarMenu3">
+              <img src="/assets/icons/UserProfile.svg" alt="" />
+              <span class="text nav-text">Monitoring</span>
+              <i
+                class="ri-arrow-down-s-line sidebar-menu-item-accordion ms-auto text"
+              ></i>
+            </a>
+            <ul
+              class="sidebar-dropdown-menu visually-hidden"
+              id="showSidebarMenu3"
+            >
+              <li class="sidebar-dropdown-menu-item">
+                <a href="#"> Monitoring - Activity </a>
+              </li>
+              <li class="sidebar-dropdown-menu-item">
+                <a href="#"> Monitoring - Results </a>
+              </li>
+              <li class="sidebar-dropdown-menu-item">
+                <a href="#"> Monitoring - Support​ Needed </a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="ShoopingList.html" class="gap-4" id="sidebarMenu2">
+              <img src="/assets/icons/ChartSuccess.svg" alt="" />
+              <span class="text nav-text">Shooping List</span>
+            </a>
+          </li>
+
+          <li class="sidebar-menu-item has-dropdown">
+            <a href="#" class="gap-4" id="sidebarMenu2">
+              <img src="/assets/icons/TaskSquare.svg" alt="" />
+              <span class="text nav-text">My Task</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <!-- end side navbar -->
 
       <!-- main content -->
