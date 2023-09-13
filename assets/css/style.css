@@ -12526,6 +12526,10 @@ header a span {
 
 .KeyDriversTable tr td:last-child {
   border-radius: 0 24px 24px 0 !important;
+}
+
+.border-buttom-dashed {
+  border-bottom: 1px dashed var(--neutral-300, #d1d1db);
 } 
 
 /*# sourceMappingURL=style.css.map */
